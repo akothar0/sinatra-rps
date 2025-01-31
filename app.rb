@@ -4,9 +4,9 @@ require "sinatra/reloader"
 def who_won(computer_played, user_played)
   if computer_played == user_played
     "Tie"
-  elsif (computer_played == "Rock" && user_played == "Scissors") ||
-        (computer_played == "Paper" && user_played == "Rock") ||
-        (computer_played == "Scissors" && user_played == "Paper")
+  elsif (computer_played == "rock" && user_played == "scissors") ||
+        (computer_played == "paper" && user_played == "rock") ||
+        (computer_played == "scissors" && user_played == "paper")
     "Computer_win"
   else
     "User_win"
