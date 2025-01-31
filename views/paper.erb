@@ -1,0 +1,43 @@
+<div>
+  <a href="/rock">
+    Play Rock
+  </a>
+</div>
+
+ <div>
+  <a href="/paper">
+    Play Paper
+  </a>
+</div>
+
+<div>
+  <a href="/scissors">
+    Play Scissors
+  </a>
+</div>
+
+<h2>
+  We played <%= @user_played %>!
+</h2>
+
+<h2>
+  They played <%= @computer_played %>!
+</h2>
+
+<% if @result == "Tie" %>
+  <h2>
+    We tied!
+  </h2>
+<% elsif @result == "Computer_won" %>
+  <h2>
+    We lost!
+  </h2>
+<% else %>
+  <h2>
+    We won!
+  </h2>
+<% end %>
+
+<a href="/">
+  Rules
+</a>
